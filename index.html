@@ -22,37 +22,73 @@ A--&gt;B
     participant Education
 
     Vasco Sousa->>+Education: Licenciate in Computer Science Engineering
+    Note over Education: FCT-UNL
 
+    Vasco Sousa->>+Education: Certification in Drawing from life
+    Note right of Education: SNBA
+    Education-->>-Vasco Sousa: 
+    
     Education-->>+ Publications: Towards a full implementation of a robust solution of a <br/> Domain Specific Visual Query Language DSVQL for HEP analysis;
-    Publications -->- Education: ;
+    Note over Publications: pdf   bib
 
     Education-->>+ Publications: Automatically Generating Domain Specific VisualLanguage <br/> Editors for the Purpose of Deriving a Robust HEP Data Analysis Tool;
-    Publications -->- Education: ;
+    Note over Publications: pdf   bib
 
-    Education-->>-Vasco Sousa: FCT-UNL
-
+    Education-->>-Vasco Sousa: 
+    
     Vasco Sousa->>+Education: Master in Computer Science Engineering
+    Note over Education: FCT-UNL
 
+    Education-->>-Vasco Sousa: 
 
-    Education-->>-Vasco Sousa: FCT-UNL
+    Vasco Sousa-->>+ Work: Journalistic coverage of the animation festival Mostra 2009.
+    Note over Work: Canela e Hortelã
+    Work -->- Vasco Sousa: 
 
     Vasco Sousa-->>+ Work: Research Engineer
-    Note right of Work: DI-FCT-UNL
+    Note over Work: DI-FCT-UNL
         Work-->>+ Publications: UbiLang: Towards a Domain Specific Modeling <br/> Language for Specification of Ubiquitous Games;
-        Publications -->- Work: ;
+        Note over Publications: pdf   bib
 
         Work-->>+ Publications: DSLTrans: A Turing Incomplete Transformation Language;
-        Publications -->- Work: ;
+        Note over Publications: pdf   bib
     Work -->- Vasco Sousa: 
 
     Vasco Sousa-->>+ Work: Research Engineer
     Note over Work: University of Luxembourg
         Work-->> Publications: Verifying Access Control in Statecharts;
-    Note right of Work: pdf
+        Note over Publications: pdf   bib
     Work -->- Vasco Sousa: 
 
 
     Vasco Sousa->>+Education: Ph.D. in Software Engineering
+        Education-->> Publications: An Expeditious Approach to Modeling IDE Interaction Design;
+        Note over Publications: pdf   bib
+        Education ->>+ Work : Consulting
+        Note over Work : Freshlegacy
+        Work-->> Publications: Feedback on How MDE Tools Are Used <br/> Prior to Academic Collaboration;
+        Note over Publications: pdf   bib
+        Work ->>- Education : 
+    
+        Vasco Sousa->>+Education: Certification in Advanced Anatomy, Drawing the Human Form, <br/> Analytical Sketching and Drawing From Life
+        Note right of Education: Syn Studio
+        Education-->>-Vasco Sousa: 
+
+        Education ->>+ Work : Teaching  Assistant
+        Note over Work : University of Montreal <br/> Software Engineering
+        Work ->>- Education : 
+
+        Education-->> Publications: Towards Collaborative Modeling Using a Concern-Driven Version Control System;
+        Note over Publications: pdf   bib
+
+        Education-->> Publications: Structure and Behavior Preserving Statecharts Refinements;
+        Note over Publications: pdf   bib
+
+        Education-->> Publications: Operationalizing the Integration of User Interaction <br/> Specifications in the Synthesis of Modeling Editors;
+        Note over Publications: pdf   bib
+
+        Education-->> Publications: Adapting modeling environments to domain specific interactions
+        Note over Publications: pdf   bib
     Education-->>-Vasco Sousa: University of Montreal
 </div>
 	
@@ -61,6 +97,7 @@ A--&gt;B
 var config = {
     startOnLoad:true,
     theme: 'forest',
+    securityLevel: 'antiscript',
     flowchart:{
             useMaxWidth:false,
             htmlLabels:true
@@ -71,3 +108,5 @@ window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
 </script>
 
 </html>
+
+
