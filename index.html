@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
 <html lang="en">
    <head>
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
@@ -9,12 +10,50 @@
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 
-<pre><code class="language-mermaid">graph LR
+<!-- <pre><code class="language-mermaid">graph LR
 A--&gt;B
-</code></pre>
+</code></pre> -->
 
-<div class="mermaid">graph LR
-A--&gt;B
+<div class="mermaid">sequenceDiagram
+
+    actor Vasco Sousa
+    participant Education
+    participant Work
+    participant Education
+
+    Vasco Sousa->>+Education: Licenciate in Computer Science Engineering
+
+    Education-->>+ Publications: Towards a full implementation of a robust solution of a <br/> Domain Specific Visual Query Language DSVQL for HEP analysis;
+    Publications -->- Education: ;
+
+    Education-->>+ Publications: Automatically Generating Domain Specific VisualLanguage <br/> Editors for the Purpose of Deriving a Robust HEP Data Analysis Tool;
+    Publications -->- Education: ;
+
+    Education-->>-Vasco Sousa: FCT-UNL
+
+    Vasco Sousa->>+Education: Master in Computer Science Engineering
+
+
+    Education-->>-Vasco Sousa: FCT-UNL
+
+    Vasco Sousa-->>+ Work: Research Engineer
+    Note right of Work: DI-FCT-UNL
+        Work-->>+ Publications: UbiLang: Towards a Domain Specific Modeling <br/> Language for Specification of Ubiquitous Games;
+        Publications -->- Work: ;
+
+        Work-->>+ Publications: DSLTrans: A Turing Incomplete Transformation Language;
+        Publications -->- Work: ;
+    Work -->- Vasco Sousa: 
+
+    Vasco Sousa-->>+ Work: Research Engineer
+    Note over Work: University of Luxembourg
+        Work-->> Publications: Verifying Access Control in Statecharts;
+    Note right of Work: <a href='http://google.com'>link</a>
+    Work -->- Vasco Sousa: 
+
+
+    Vasco Sousa->>+Education: Ph.D. in Software Engineering
+    Education-->>-Vasco Sousa: University of Montreal
 </div>
 	
 </body>
